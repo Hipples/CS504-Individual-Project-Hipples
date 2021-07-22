@@ -3,5 +3,5 @@
 
 # HOS01A - Create Github Repository for Individual Project with 5 Submission folders 
 #        - Make each submission folder contain a README.md file
-#        - Invite collaborators (cityu-rgary, KimNguyenMai, and TP teammates (Ron & Talia))
+#        - Invite collaborators (maryoohhh, keschraml, and TP teammates (Ron & Talia))
 #        - Push work to github  
