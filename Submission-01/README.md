@@ -2,7 +2,7 @@ IP01 Instructions
 
 Requirements & Deliverables:
 x. Please use GitHub and Git as the CMS system.
-x. You'll need to create two accounts in the system, including one with applicable admin rights (Hipples & TBD).
+x. You'll need to create two accounts in the system, including one with applicable admin rights (Hipples & swiseWHAT).
 x. You'll need to create written test cases including process flows, where applicable, and demonstrate their functionality in       
    Github for the following:
         x. Code check out
@@ -12,7 +12,10 @@ x. You'll need to create written test cases including process flows, where appli
             x. First user/account checks out the code
             x. Second dev/user/account checks out the code and makes changes
             x. The first dev/user/account then makes their change and needs to check it in
-            x. NOTE: How would you ensure you are including everyone's changing without overwriting anything?
+                     
+                     x. QUESTION: How would you ensure you are including everyone's changing without overwriting anything?            
+                     x. ANSWER: git pull is required prior to git push origin main if the repository has been updated by another user at any point                     
+        
         x. Code changes rolled back to a previous level
         x. One dev/user/account is working on a new version while one is fixing bugs in a previous release.
 
