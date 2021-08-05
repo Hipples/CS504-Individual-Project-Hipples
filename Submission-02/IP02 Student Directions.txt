@@ -1,0 +1,5 @@
+Each student will conduct a requirements engineering process and map the resulting requirements into a systems architecture or high-level design. The student will trace the mapping of requirements to modules in the architecture.
+
+The student will choose an architectural style based on the appropriateness of the style to the requirements. Based on the style the student will complete the architecture/high level design to the level where it is ready for implementation.
+
+The student will create all design artifacts appropriate to the selected style.

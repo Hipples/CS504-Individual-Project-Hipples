@@ -1,0 +1,51 @@
+https://www.perforce.com/blog/alm/how-write-software-requirements-specification-srs-document
+
+
+1. Create an Outline (Or Use an SRS Template)
+Your first step is to create an outline for your software requirements specification. This may be something you create yourself. Or you may use an existing SRS template.
+
+If you’re creating this yourself, here’s what your outline might look like:
+
+ 1. Introduction - A window's form calculator
+
+1.1 Purpose - Ability to perform basic math operations as needed by user.
+
+1.2 Intended Audience - Window's user.
+
+1.3 Intended Use - Basic math calculations.
+
+1.4 Scope - Simple calculator program for window's users. 
+
+1.5 Definitions and Acronyms -
+
+
+2. Overall Description - Newly created GUI program designed to calculate basic math problems input by a Window's user.
+
+2.1 User Needs - any window's OS user can use this program to complete basic math calculations.
+
+2.2 Assumptions and Dependencies -
+
+
+3. System Features and Requirements
+
+            3.1 Functional Requirements -
+
+x. Add, subtract, multiply and divide numbers input by user
+x. Display most recent user input in label 
+x. Able to clear last input/result, clear all inputs, and backspace one character while inputting
+
+            3.2 External Interface Requirements
+
+            3.3 System Features
+
+            3.4 Nonfunctional Requirements
+
+x. looks like a basic electronic calculator
+x. immediate result display
+
+
+
+
+
+https://arkenea.com/blog/software-requirements-document-template/
+
