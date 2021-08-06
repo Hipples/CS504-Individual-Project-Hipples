@@ -13,13 +13,14 @@ x. You'll need to create written test cases including process flows, where appli
             x. Second dev/user/account checks out the code and makes changes
             x. The first dev/user/account then makes their change and needs to check it in
                      
-                x. QUESTION: How would you ensure you are including everyone's changing without overwriting anything?            
+                x. QUESTION: How would you ensure you are including everyone's changes without overwriting anything?            
                 x. ANSWER: git pull is required prior to git push origin main if the repository has been updated by another user at any point                     
         
         x. Code changes rolled back to a previous level
         x. One dev/user/account is working on a new version while one is fixing bugs in a previous release.
 
 Your final deliverable should document the written test cases, any process flows, screenshots of each step in the process and the final end result.  
+
 Please include any corresponding narrative to support your thought process and remember to cite your sources. 
 
 Due: Sunday, July 18, 2021

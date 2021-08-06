@@ -1,0 +1,11 @@
+IP03 Student Directions
+
+Each student will create a test plan including test cases for the system they designed for the previous assignments.
+
+The student will indicate and explain the process model to be used for the development of the system. The test plan will be developed to be consistent with the process model.
+
+The plan must include an overview of the approach to testing including the project test philosophy.
+
+The plan must include needed unit, systems, validation and verification, and acceptance testing. The plan should indicate regression-testing requirements. The plan must assign responsibilities for each test.
+
+The student will develop example test cases for required tests. The test cases must be consistent with the test plan approach and requirements.
