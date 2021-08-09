@@ -45,6 +45,11 @@ x. Create a test case to demonstrate ability to revert repository to a previous 
 x. Ensure all screenshots are saved appropriately. 
 x. Update Submission 01 for the final time. 
 
+August 6th:
+x. Finish description of test cases for reverting to a prior commit & debugging a previous version of the sample software project. 
+x. Update README and finalize Submission 01.
+x. Upload APA report to blackboard. 
+
 ------------------------------------------------------------------------------------------------------------------------------------
 Completed Tasks 
 
@@ -56,9 +61,13 @@ x. Created initial README document outlining how student intends to complete ass
 July 21st:
 x. Created alt github account & alt Windows account as "swiseWHAT"
 x. Created test cases for github checkout, check-in(FAIL & PASS) with screenshots of the various testing proccesses. 
-x. Demonstrated ability to invite another github user to collaborate on a project, push and pull as both the owner & contributer of a github repository, 
-   revert repository back to a previous commit version via github.com.
+x. Demonstrated ability to invite another github user to collaborate on a project, push and pull as both the owner & contributer of a github repository, revert repository back to a previous commit version via github.com.
 x. Updated READme.md for Submission 01
+
+August 6th:
+x. Created APA document of test case process. 
+x. Created, committed updates to, requested pull of, then merged a master branch to the main branch using both contributor accounts - saved screenshots of process.
+x. Created master branch from a previous commit than the most recent update to the main branch - saved screenshots of process. 
 
 ------------------------------------------------------------------------------------------------------------------------------------
 Resources & References
