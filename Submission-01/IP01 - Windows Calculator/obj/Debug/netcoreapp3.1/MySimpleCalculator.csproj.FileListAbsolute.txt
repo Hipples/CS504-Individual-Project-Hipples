@@ -1,0 +1,16 @@
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\bin\Debug\netcoreapp3.1\MySimpleCalculator.exe
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\bin\Debug\netcoreapp3.1\MySimpleCalculator.deps.json
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\bin\Debug\netcoreapp3.1\MySimpleCalculator.runtimeconfig.json
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\bin\Debug\netcoreapp3.1\MySimpleCalculator.runtimeconfig.dev.json
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\bin\Debug\netcoreapp3.1\MySimpleCalculator.dll
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\bin\Debug\netcoreapp3.1\MySimpleCalculator.pdb
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\obj\Debug\netcoreapp3.1\MySimpleCalculator.csproj.AssemblyReference.cache
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\obj\Debug\netcoreapp3.1\IP01___Windows_Calculator.CalculatorWindow.resources
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\obj\Debug\netcoreapp3.1\IP01___Windows_Calculator.Properties.Resources.resources
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\obj\Debug\netcoreapp3.1\MySimpleCalculator.csproj.GenerateResource.cache
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\obj\Debug\netcoreapp3.1\MySimpleCalculator.AssemblyInfoInputs.cache
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\obj\Debug\netcoreapp3.1\MySimpleCalculator.AssemblyInfo.cs
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\obj\Debug\netcoreapp3.1\MySimpleCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\obj\Debug\netcoreapp3.1\MySimpleCalculator.dll
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\obj\Debug\netcoreapp3.1\MySimpleCalculator.pdb
+C:\Users\Saman\Desktop\CS 504\4. Individual Project\CS504-Individual-Project-Hipples\Submission-01\IP01 - Windows Calculator\obj\Debug\netcoreapp3.1\MySimpleCalculator.genruntimeconfig.cache

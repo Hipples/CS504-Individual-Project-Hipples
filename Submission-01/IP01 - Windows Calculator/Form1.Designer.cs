@@ -288,7 +288,7 @@ namespace IP01___Windows_Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 447);
+            this.ClientSize = new System.Drawing.Size(368, 450);
             this.Controls.Add(this.CurrentOperationLabel);
             this.Controls.Add(this.TextBoxResults);
             this.Controls.Add(this.ButtonDelete);
@@ -316,6 +316,7 @@ namespace IP01___Windows_Calculator
             this.Name = "CalculatorWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
+            this.Load += new System.EventHandler(this.CalculatorWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

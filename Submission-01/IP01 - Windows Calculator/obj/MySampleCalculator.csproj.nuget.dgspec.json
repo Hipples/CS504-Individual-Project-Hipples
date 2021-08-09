@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Saman\\Desktop\\CS 504\\4. Individual Project\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\IP01 - Windows Calculator.csproj": {}
+    "C:\\Users\\Saman\\Desktop\\CS 504\\4. Individual Project\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\MySampleCalculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Saman\\Desktop\\CS 504\\4. Individual Project\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\IP01 - Windows Calculator.csproj": {
+    "C:\\Users\\Saman\\Desktop\\CS 504\\4. Individual Project\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\MySampleCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Saman\\Desktop\\CS 504\\4. Individual Project\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\IP01 - Windows Calculator.csproj",
-        "projectName": "IP01 - Windows Calculator",
-        "projectPath": "C:\\Users\\Saman\\Desktop\\CS 504\\4. Individual Project\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\IP01 - Windows Calculator.csproj",
+        "projectUniqueName": "C:\\Users\\Saman\\Desktop\\CS 504\\4. Individual Project\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\MySampleCalculator.csproj",
+        "projectName": "MySampleCalculator",
+        "projectPath": "C:\\Users\\Saman\\Desktop\\CS 504\\4. Individual Project\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\MySampleCalculator.csproj",
         "packagesPath": "C:\\Users\\Saman\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Saman\\Desktop\\CS 504\\4. Individual Project\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\obj\\",
         "projectStyle": "PackageReference",

@@ -102,5 +102,10 @@ namespace IP01___Windows_Calculator
                     break;
             }
         }
+
+        private void CalculatorWindow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

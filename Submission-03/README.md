@@ -81,6 +81,9 @@ Once your test plan is in place, there is a specific process you need to follow.
 
 INCLUDE TEST CASES FROM PREVIOUS ASSIGNMENTS IN TEST PLAN
 ---------------------------------------------------------------------------------------------------------------
+Does not apply to my IP01 submission. 
+Instead of actually checking out, modifying code on MySimpleCalculator, checkin it back it, etc., etc..
+I simply made adjustments within the project that were visible and substantial in proving Github collaborative abilities. 
 
 
 INDICATE & EXPLAIN PROCESS MODEL FOR DEVELOPMENT OF SYSTEM
