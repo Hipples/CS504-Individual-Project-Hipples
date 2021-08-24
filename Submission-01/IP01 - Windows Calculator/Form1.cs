@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IP01___Windows_Calculator
+namespace MySimpleCalculator
 {
     public partial class CalculatorWindow : Form
     {
@@ -20,92 +20,97 @@ namespace IP01___Windows_Calculator
         {
             InitializeComponent();
         }
-        private void ButtonClick(object sender, EventArgs e)
+
+//Value Input [ 0 ] - [ 9 ] or [ . ]
+        private void ValueInput(object sender, EventArgs e)
         {
 
- //clear textbox upon button click if the current text is either "0" OR
-//when an operation has been performed
-            if ((TextBoxResults.Text == "0") || (isOperationPerformed)) 
-                TextBoxResults.Clear();
+     //clear textbox upon button click if the current text is either "0" OR
+    //when an operation has been performed
+            if ((TextBox.Text == "0") || (isOperationPerformed)) 
+               TextBox.Clear();
 
-//set isOperationPerformed to false
+    //set isOperationPerformed to false
             isOperationPerformed = false;
 
-//text on button equals input
+    //text on button equals user input
             Button button=(Button)sender;
 
-//do not allow more than one decimal per entry
+    //do not allow more than one decimal per entry
             if (button.Text == ".")
             {
-                if (!TextBoxResults.Text.Contains("."))
-                    TextBoxResults.Text = TextBoxResults.Text + button.Text;
+                if (!TextBox.Text.Contains("."))
+                    TextBox.Text = TextBox.Text + button.Text;
             }
             else
-                TextBoxResults.Text = TextBoxResults.Text + button.Text;
+                TextBox.Text = TextBox.Text + button.Text;
         }
-        private void OperatorClick(object sender, EventArgs e)
+
+//Operators  [ + ]  [ - ]  [ / ]  [ * ]
+        private void Operators(object sender, EventArgs e)
         {
             Button button = (Button)sender;
 
             operationPerformed = button.Text;
-            resultValue = Double.Parse(TextBoxResults.Text);
+            resultValue = Double.Parse(TextBox.Text);
 
+        //Push user input to label above textbox
             CurrentOperationLabel.Text = resultValue + " " + operationPerformed;
 
             isOperationPerformed = true;
         }
-        private void ClearClick(object sender, EventArgs e)
+
+//Clear All  [ C ]
+        private void ClearAll(object sender, EventArgs e)
         {
-            TextBoxResults.Text = "0";
+            TextBox.Text = "0";
             resultValue = 0;
         }
-        private void ClearEntryClick(object sender, EventArgs e)
+
+//Clear Entry  [ CE ]
+        private void ClearEntry(object sender, EventArgs e)
         {
-            TextBoxResults.Text = "0";
+            TextBox.Text = "0";
         }
-        private void BackSpaceClick(object sender, EventArgs e)
+
+//Backspace  [ < ] 
+        private void BackSpace(object sender, EventArgs e)
         {
-            if ((String.Compare(TextBoxResults.Text, " ") < 0))
+            if ((String.Compare(TextBox.Text, " ") < 0))
             {
-                TextBoxResults.Text = TextBoxResults.Text.Substring(0, TextBoxResults.Text.Length - 1 + 1);
+                TextBox.Text = TextBox.Text.Substring(0, TextBox.Text.Length - 1 + 1);
             }
             else
             {
-                TextBoxResults.Text = TextBoxResults.Text.Substring(0, TextBoxResults.Text.Length - 1);
+                TextBox.Text = TextBox.Text.Substring(0, TextBox.Text.Length - 1);
             }
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-        private void TextBoxResults_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void ResultsClick(object sender, EventArgs e)
+//Calculate  [ = ]
+        private void Calculate(object sender, EventArgs e)
         {
             switch (operationPerformed)
             {
                 case "+": 
-                    TextBoxResults.Text = (resultValue + Double.Parse(TextBoxResults.Text)).ToString();
+                    TextBox.Text = (resultValue + Double.Parse(TextBox.Text)).ToString();
                     break;
                 case "-":
-                    TextBoxResults.Text = (resultValue - Double.Parse(TextBoxResults.Text)).ToString();
+                    TextBox.Text = (resultValue - Double.Parse(TextBox.Text)).ToString();
                     break;
                 case "*":
-                    TextBoxResults.Text = (resultValue * Double.Parse(TextBoxResults.Text)).ToString();
+                    TextBox.Text = (resultValue * Double.Parse(TextBox.Text)).ToString();
                     break;
                 case "/":
-                    TextBoxResults.Text = (resultValue / Double.Parse(TextBoxResults.Text)).ToString();
+                    TextBox.Text = (resultValue / Double.Parse(TextBox.Text)).ToString();
                     break;
                 default:
                     break;
             }
-        }
 
-        private void CalculatorWindow_Load(object sender, EventArgs e)
-        {
-
+    //Push results to be stored on CurrentOperationLabel. 
+            resultValue = Double.Parse(TextBox.Text);
+            CurrentOperationLabel.Text = "";
         }
     }
 }
+//Cannot do more than a + b, that is, cannot perform multistep operations without applying the equal sign between every other value. 

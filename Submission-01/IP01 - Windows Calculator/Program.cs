@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IP01___Windows_Calculator
+namespace MySimpleCalculator
 {
     static class Program
     {

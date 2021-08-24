@@ -1,0 +1,157 @@
+//Value Input [ 0 ] - [ 9 ] or [ . ]
+
+        private void ValueInput(object sender, EventArgs e)
+        {
+
+     //clear textbox upon button click if the current text is either "0" OR
+    //when an operation has been performed
+            if ((TextBox.Text == "0") || (isOperationPerformed)) 
+               TextBox.Clear();
+
+    //set isOperationPerformed to false
+            isOperationPerformed = false;
+
+    //text on button equals user input
+            Button button=(Button)sender;
+
+    //do not allow more than one decimal per entry
+            if (button.Text == ".")
+            {
+                if (!TextBox.Text.Contains("."))
+                    TextBox.Text = TextBox.Text + button.Text;
+            }
+            else
+                TextBox.Text = TextBox.Text + button.Text;
+        }
+
+USER EXPECTATIONS:
+x. WHATEVER TEXT ON THE BUTTON SHOULD APPEAR IN THE RESULTS TEXT BOX WHEN CLICKED
+x. THE DECIMAL CAN ONLY BE APPLIED ONCE PER ENTRY
+x. THE DEFAULT ZERO DISAPPEARS UPON INITAL ENTRY
+x. THE PREVIOUS USER INPUT DISAPPEARS IF AN OPERATOR HAS BEEN APPLIED WHEN INPUTTING NEXT VALUE
+x. THE PREVIOUS RESULTS SHOULD CLEAR UPON NEXT ENTRY 
+
+--------------------------------------------------------------------------------------------------------------------------------
+//Backspace  [ < ] 
+
+        private void BackSpace(object sender, EventArgs e)
+        {
+            if ((String.Compare(TextBoxResults.Text, " ") < 0))
+            {
+                TextBoxResults.Text = TextBoxResults.Text.Substring(0, TextBoxResults.Text.Length - 1 + 1);
+            }
+            else
+            {
+                TextBoxResults.Text = TextBoxResults.Text.Substring(0, TextBoxResults.Text.Length - 1);
+            }
+        }
+
+USER EXPECTATIONS:
+X. DELETES MOST RECENT VALUE OR OPERATOR USER INPUT ONE SPACE TO ALLOW EDITING MISTAKES
+X. PREFERS DOES NOT FUNCTION ON RESULTS SCREEN, JUST USER ENTRY SCREENS
+
+--------------------------------------------------------------------------------------------------------------------------------
+//Operators  [ + ]  [ - ]  [ / ]  [ * ]
+
+        private void Operators(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+
+            operationPerformed = button.Text;
+            resultValue = Double.Parse(TextBox.Text);
+
+        //Push user input to label above textbox
+            CurrentOperationLabel.Text = resultValue + " " + operationPerformed;
+
+            isOperationPerformed = true;
+        }
+
+USER EXPECTATIONS:
+X. UPON CLICK, CURRENT TEXTBOX VALUE & OPERATOR CHOSEN APPEAR IN LABEL
+X. CHOSING ANOTHER OPERATOR PRIOR TO INPUTTING A NEW VALUE WILL CHANGE THE OPERATOR IN THE LABEL/CALCULATION
+X. [ < ] WILL REMOVE THE OPERATOR AND ALLOW THE USER TO EDIT THE VALUE IN THE TEXTBOX PRIOR TO CONTINUING
+	X. IDEALLY, LABEL WOULD CLEAR AS WELL
+X. NEXT VALUE INPUT SHOULD FIRST CLEAR THE TEXTBOX OF PREVIOUS INPUT (WHICH IS INSTEAD RECORDED IN THE LABEL)
+X. USER SHOULD BE ABLE TO USE THE RESULTS OF THE PREVIOUS OPERATION AS THE FIRST INPUT OF THEIR NEXT OPERATION
+
+--------------------------------------------------------------------------------------------------------------------------------
+//Clear All  [ C ]
+
+        private void ClearAll(object sender, EventArgs e)
+        {
+            TextBox.Text = "0";
+            resultValue = 0;
+        }
+
+USER EXPECTATIONS:
+X. COMPLETELY RESETS APP TO STARTING POINT/DEFAULT SETTING, CLEARING ALL USER INPUTS & CALCULATIONS
+
+--------------------------------------------------------------------------------------------------------------------------------
+//Clear Entry  [ CE ]
+
+        private void ClearEntry(object sender, EventArgs e)
+        {
+            TextBox.Text = "0";
+        }
+
+USER EXPECTATIONS:
+X. CLEARS ONLY THE TEXT/LOGIC CURRENTLY DISPLAYED WITHIN THE TEXTBOX
+X. SHOULD ALLOW THE CONTINUATION OF AN OPERATION, I.E., IF CLEARING A SECONDARY VALUE ENTRY - 
+   THE VALUE AND OPERATOR WITHIN THE LABEL SHOULD REMAIN AS THE INITIAL VALUE OF THE FUTURE CALCULATION. 
+
+--------------------------------------------------------------------------------------------------------------------------------
+//Backspace  [ < ] 
+
+        private void BackSpace(object sender, EventArgs e)
+        {
+            if ((String.Compare(TextBox.Text, " ") < 0))
+            {
+                TextBox.Text = TextBox.Text.Substring(0, TextBox.Text.Length - 1 + 1);
+            }
+            else
+            {
+                TextBox.Text = TextBox.Text.Substring(0, TextBox.Text.Length - 1);
+            }
+        }
+
+USER EXPECTATIONS:
+X. ALLOWS USERS TO EDIT THEIR CURRENT VALUE ENTRY BY REMOVING THE MOST RECENT INPUT ONE VALUE AT A TIME
+X. SHOULD NOT WORK ON CALCULATED RESULTS, I.E., SHOULD ONLY WORK ON USER INPUTS
+X. SHOULD REMOVE AN OPERATOR FROM THE LABEL IF USED AFTER AN ACCIDENTAL OPERATOR CLICK AND ALLOW FURTHER NUMBER VALUE EDITING
+
+--------------------------------------------------------------------------------------------------------------------------------
+//Calculate  [ = ]
+
+        private void Calculate(object sender, EventArgs e)
+        {
+            switch (operationPerformed)
+            {
+                case "+": 
+                    TextBox.Text = (resultValue + Double.Parse(TextBox.Text)).ToString();
+                    break;
+                case "-":
+                    TextBox.Text = (resultValue - Double.Parse(TextBox.Text)).ToString();
+                    break;
+                case "*":
+                    TextBox.Text = (resultValue * Double.Parse(TextBox.Text)).ToString();
+                    break;
+                case "/":
+                    TextBox.Text = (resultValue / Double.Parse(TextBox.Text)).ToString();
+                    break;
+                default:
+                    break;
+            }
+
+    //Push results to be stored on CurrentOperationLabel. 
+            resultValue = Double.Parse(TextBox.Text);
+            CurrentOperationLabel.Text = "";
+        }
+    }
+
+USER EXPECTATIONS:
+x. CALCULATION WILL EQUAL THE RECORDED DATA IN THE LABEL PLUS THE USER INPUT DISPLAYED IN THE TEXT BOX.
+x. LABEL WILL CLEAR UPON CLICK. 
+x. RESULTS WILL DISPLAY IN THE TEXTBOX ONLY. 
+X. RESULTS BOX SHOULD CLEAR UPON NEXT USER INPUT - 
+	X. OPERATORS SHOULD SEND THE RESULTS TO THE LABEL + THE OPERATOR
+	X. NUMBERS SHOULD CAUSE A COMPLETE RESET PRIOR TO BEING DISPLAYED IN THE RESULTS BOX

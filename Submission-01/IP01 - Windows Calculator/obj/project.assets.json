@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Saman\\.nuget\\packages\\": {},
+    "C:\\Users\\swiseWHAT\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Saman\\Desktop\\CS 504\\4. Individual Project\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\MySimpleCalculator.csproj",
+      "projectUniqueName": "C:\\Users\\swiseWHAT\\Desktop\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\MySimpleCalculator.csproj",
       "projectName": "MySimpleCalculator",
-      "projectPath": "C:\\Users\\Saman\\Desktop\\CS 504\\4. Individual Project\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\MySimpleCalculator.csproj",
-      "packagesPath": "C:\\Users\\Saman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Saman\\Desktop\\CS 504\\4. Individual Project\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\obj\\",
+      "projectPath": "C:\\Users\\swiseWHAT\\Desktop\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\MySimpleCalculator.csproj",
+      "packagesPath": "C:\\Users\\swiseWHAT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\swiseWHAT\\Desktop\\CS504-Individual-Project-Hipples\\Submission-01\\IP01 - Windows Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Saman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\swiseWHAT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

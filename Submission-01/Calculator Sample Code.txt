@@ -1,0 +1,98 @@
+BASIC 0-9 AND . BUTTON CLICKS SAMPLE CODE:      
+
+  private void button_click(object sender, EventArgs e)
+        {
+            if ((textBox_Result.Text == "0") || (isOperationPerformed))
+                textBox_Result.Clear();
+
+            isOperationPerformed = false;
+            Button button = (Button)sender;
+            if (button.Text == ".")
+            { 
+               if(!textBox_Result.Text.Contains("."))
+                   textBox_Result.Text = textBox_Result.Text + button.Text;
+
+            }else
+            textBox_Result.Text = textBox_Result.Text + button.Text;
+        }
+
+USER EXPECTATIONS:
+x. WHATEVER TEXT ON THE BUTTON SHOULD APPEAR IN THE RESULTS TEXT BOX WHEN CLICKED
+x. THE DECIMAL CAN ONLY BE APPLIED ONCE PER ENTRY
+x. THE DEFAULT ZERO DISAPPEARS UPON INITAL CLICK
+x. THE PREVIOUS USER INPUT DISAPPEARS IF AN OPERATOR HAS BEEN APPLIED WHEN INPUTTING NEXT VALUE
+x. THE PREVIOUS RESULTS SHOULD CLEAR UPON NEXT ENTRY 
+				///FLAG DOES NOT WORK (08.23.21)
+
+
+
+
+OPERATOR [ / + * - ] BUTTON CLICKS SAMPLE CODE:
+
+        private void operator_click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+
+            if (resultValue != 0)
+            {
+                button15.PerformClick();
+                operationPerformed = button.Text;
+                labelCurrentOperation.Text = resultValue + " " + operationPerformed;
+                isOperationPerformed = true;
+            }
+            else
+            {
+                operationPerformed = button.Text;
+                resultValue = Double.Parse(textBox_Result.Text);
+                labelCurrentOperation.Text = resultValue + " " + operationPerformed;
+                isOperationPerformed = true;
+            }
+        }
+
+USER EXPECTATIONS:
+x. USER INPUT DATA CORRESPONDS TO TEXT FOUND ON BUTTON CLICKED
+x. PREVIOUSLY INPUTTED VALUE & OPERATOR ARE RECORDED IN CALCULATOR LABEL WHEN AN OPERATOR IS CLICKED
+x. USER CAN CHOOSE TO CHANGE THE OPERATOR - DEMONSTRATED BY A CHANGE IN LABEL DISPLAY, UNTIL THE NEXT VALUE HAS BEEN INPUTTED
+
+
+
+
+cALCULATE [ = ] SAMPLE CODE: 
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            switch (operationPerformed)
+            {
+                case "+":
+                    textBox_Result.Text = (resultValue + Double.Parse(textBox_Result.Text)).ToString();
+                    break;
+                case "-":
+                    textBox_Result.Text = (resultValue - Double.Parse(textBox_Result.Text)).ToString();
+                    break;
+                case "*":
+                    textBox_Result.Text = (resultValue * Double.Parse(textBox_Result.Text)).ToString();
+                    break;
+                case "/":
+                    textBox_Result.Text = (resultValue / Double.Parse(textBox_Result.Text)).ToString();
+                    break;
+                default:
+                    break;
+            }
+            resultValue = Double.Parse(textBox_Result.Text);
+            labelCurrentOperation.Text = "";
+        }
+
+USER EXPECTATIONS:
+x. CALCULATION WILL EQUAL THE RECORDED DATA IN THE LABEL PLUS THE USER INPUT DISPLAYED IN THE TEXT BOX.
+x. LABEL WILL CLEAR UPON CLICK. 
+x. RESULTS WILL DISPLAY IN THE TEXTBOX ONLY. 
+X. RESULTS BOX SHOULD CLEAR UPON NEXT USER INPUT - 
+	X. OPERATORS SHOULD SEND THE RESULTS TO THE LABEL + THE OPERATOR
+	X. NUMBERS SHOULD CAUSE A COMPLETE RESET PRIOR TO BEING DISPLAYED IN THE RESULTS BOX
+
+
+
+
+
+
+
