@@ -1,0 +1,38 @@
+﻿<!-- add url for new page -->
+@page "/todo"
+
+<!-- section header -->
+<h3>To Do</h3>
+
+<!-- adds counting the number of undone To Do items (by default, IsDone is false) -->
+<p>Number of To Do items: @todos.Count(todo => !todo.IsDone)</p>
+
+<!-- space designated for user created To Do list -->
+<ul>
+    @foreach (var todo in todos)
+    {
+        <li>@todo.Title</li>
+    }
+</ul>
+
+<!-- binds user input to variable "newToDo" upon button click -->
+<input placeholder="Something To Do" @bind="newToDo"/>
+<button @onclick="AddToDo">Add To Do</button>
+
+@code {
+
+/*declares new list based on public class ToDoItem*/
+    private IList<ToDoItem> todos = new List<ToDoItem>();
+/*declares newToDo as private string variable*/        
+    private string newToDo;
+/*declares AddToDo() method using binded newToDo variable that is initialized by user input;
+upon submission, user input is added to a To Do list displayed on screen*/
+    private void AddToDo()
+    {
+        if (!string.IsNullOrWhiteSpace(newToDo))
+        {
+            todos.Add(new ToDoItem { Title = newToDo });
+            newToDo = string.Empty; /*resets user input space to allow more than one entry*/
+        }
+    }
+}

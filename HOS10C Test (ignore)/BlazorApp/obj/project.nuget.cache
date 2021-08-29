@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PlSZ/dsC2BijhoOIJnP9OuOvTkQY7g+O1RxIGtNeTl58F9nQzKA7D4J6xzDKvTMK3Vlh76bmOftIzkOlcVAnMw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Saman\\Desktop\\CS 504\\3. Hands On Skills\\CS504-Summer-2021-HOS---Hipples\\Module 10\\BlazorApp\\BlazorApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Saman\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115\\stub.system.data.sqlite.core.netstandard.1.0.115.nupkg.sha512",
+    "C:\\Users\\Saman\\.nuget\\packages\\system.data.sqlite.core\\1.0.115\\system.data.sqlite.core.1.0.115.nupkg.sha512"
+  ],
+  "logs": []
+}

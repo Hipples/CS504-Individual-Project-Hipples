@@ -1,0 +1,46 @@
+@page "/signup"
+@using BlazorApp.Data
+@inject SQLiteService db
+@inject NavigationManager NavigationManager
+
+@if (true) //username already in use
+{
+    <label for="fname">Account:</label>
+    <input type="text" @bind="@account" @bind:event="oninput" id="account" name="account"><p>@exist</p><br><br>
+    <label for="lname">Password:</label>
+    <input type="password" @bind="@password" @bind:event="oninput" id="password" name="password"><p>@warning</p><br><br>
+    <button @onclick="signup"> Sign Up </button>
+    <input type=button onClick="location.href='/login'" value='Cancel'> //redirect to login page
+}
+else
+{
+    <label for="fname">Account:</label>
+    <input type="text" @bind="@account" id="account" name="account"><br><br>
+    <label for="lname">Password:</label>
+    <input type="text" @bind="@password" id="password" name="password"><br><br>
+    <button class="btn btn-primary" @onclick="signup"> Sign Up </button>
+}
+
+@code
+{
+    private string account { get; set; }
+    private string password { get; set; }
+    
+    string exist { get; set; }
+    string warning { get; set; }
+
+    async Task signup()
+    {
+        bool memberInDB = await db.CheckUsernameInDB(account);
+        if(memberInDB == true)
+            {exist = "Username already exists";} //check if username already exists 
+        else
+        { if(this.password!= null && this.password.Length >= 6 ) //check password's strength
+            {
+                db.CreateNewMember(account, password); //write to database
+                NavigationManager.NavigateTo("/login"); //redirect to login page
+            }
+            else {warning = "Password must be at least 6 characters";}   
+        }    
+    }
+}
