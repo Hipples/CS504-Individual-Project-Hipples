@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WmTqS9qTEm4IjLA745V1pl1y2jgC7Dka1AMWVuk39HjgPQomK1cDp8tn+rJc/3gR/4jbc55ZEyjUWTjbwUC6uQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Saman\\Desktop\\CS 504\\4. Individual Project\\CS504-Individual-Project-Hipples\\Submission-02\\IP01 - Windows Calculator\\MySimpleCalculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Saman\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.17\\microsoft.netcore.app.host.win-x64.3.1.17.nupkg.sha512"
+  ],
+  "logs": []
+}
